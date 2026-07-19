@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <!-- Lipstick body -->
+  <rect x="44" y="50" width="40" height="48" rx="4" fill="#f43f5e"/>
+  <!-- Lipstick tip -->
+  <path d="M48 50 L64 20 L80 50 Z" fill="#f43f5e"/>
+  <!-- Lipstick cap line -->
+  <rect x="44" y="98" width="40" height="14" rx="4" fill="#fda4af"/>
+  <!-- Shine highlight -->
+  <rect x="54" y="30" width="4" height="16" rx="2" fill="#fecdd3" opacity="0.7"/>
+</svg>

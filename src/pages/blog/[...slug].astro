@@ -1,0 +1,173 @@
+---
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE } from '../../consts';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+	return posts.map((post) => ({
+		params: { slug: post.id },
+		props: post,
+	}));
+}
+
+type Props = CollectionEntry<'blog'>;
+
+const post = Astro.props;
+const { Content } = await render(post);
+
+function categoryLabel(cat: string) {
+	switch(cat) {
+		case 'beauty-tech': return 'Beauty Tech';
+		case 'dupes': return 'Dupes';
+		case 'mens-grooming': return "Men's Grooming";
+		case 'guides': return 'Guides';
+		default: return cat;
+	}
+}
+
+function categoryColor(cat: string) {
+	switch(cat) {
+		case 'beauty-tech': return 'text-rose-500 bg-rose-50';
+		case 'dupes': return 'text-amber-600 bg-amber-50';
+		case 'mens-grooming': return 'text-stone-600 bg-stone-100';
+		case 'guides': return 'text-blue-600 bg-blue-50';
+		default: return 'text-stone-600 bg-stone-100';
+	}
+}
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`${post.data.title} — ${SITE_TITLE}`} description={post.data.description} />
+		{post.data.rating && (
+			<script type="application/ld+json" set:html={JSON.stringify({
+				"@context": "https://schema.org",
+				"@type": "Review",
+				"name": post.data.title,
+				"description": post.data.description,
+				"datePublished": post.data.pubDate.toISOString(),
+				"author": { "@type": "Organization", "name": "BeautyDupe" },
+				"reviewRating": {
+					"@type": "Rating",
+					"ratingValue": post.data.rating,
+					"bestRating": 5
+				},
+				...(post.data.price && {
+					"itemReviewed": {
+						"@type": "Product",
+						"name": post.data.title.replace(' Review', ''),
+						"offers": {
+							"@type": "Offer",
+							"price": post.data.price.replace('$', '').split('-')[0],
+							"priceCurrency": "USD"
+						}
+					}
+				})
+			})} />
+		)}
+	</head>
+	<body class="bg-white font-sans text-stone-900 antialiased">
+		<Header />
+
+		<main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+			<article>
+				<!-- Header -->
+				<header class="mb-10">
+					<span class={`inline-block text-xs font-semibold px-2.5 py-1 rounded-full mb-4 ${categoryColor(post.data.category)}`}>
+						{categoryLabel(post.data.category)}
+					</span>
+					<h1 class="text-3xl sm:text-4xl font-bold text-stone-900 leading-tight">{post.data.title}</h1>
+					<p class="mt-3 text-stone-500">
+						<time datetime={post.data.pubDate.toISOString()}>
+							{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+						</time>
+					</p>
+
+					{post.data.price && (
+						<p class="mt-4 text-lg font-semibold text-stone-800">Price: {post.data.price}</p>
+					)}
+
+					{post.data.rating && (
+						<div class="mt-2 flex items-center gap-2">
+							<span class="text-amber-500 text-lg">{'★'.repeat(Math.round(post.data.rating))}{'☆'.repeat(5 - Math.round(post.data.rating))}</span>
+							<span class="text-sm text-stone-500">{post.data.rating}/5</span>
+						</div>
+					)}
+
+					{post.data.dupeFor && (
+						<p class="mt-3 text-sm text-stone-500">Dupe for: <span class="font-medium text-stone-700">{post.data.dupeFor}</span></p>
+					)}
+				</header>
+
+				<!-- Hero image placeholder -->
+				<div class="w-full h-64 sm:h-80 bg-rose-50 rounded-xl mb-10 flex items-center justify-center">
+					<span class="text-rose-200">Featured Image</span>
+				</div>
+
+				<!-- Pros / Cons -->
+				{(post.data.pros || post.data.cons) && (
+					<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+						{post.data.pros && (
+							<div class="bg-green-50 rounded-lg p-5">
+								<h3 class="font-semibold text-green-800 mb-3">Pros</h3>
+								<ul class="space-y-1.5">
+									{post.data.pros.map(pro => (
+										<li class="text-sm text-green-700 flex items-start gap-2">
+											<span class="text-green-500 mt-0.5">✓</span>
+											<span>{pro}</span>
+										</li>
+									))}
+								</ul>
+							</div>
+						)}
+						{post.data.cons && (
+							<div class="bg-red-50 rounded-lg p-5">
+								<h3 class="font-semibold text-red-800 mb-3">Cons</h3>
+								<ul class="space-y-1.5">
+									{post.data.cons.map(con => (
+										<li class="text-sm text-red-700 flex items-start gap-2">
+											<span class="text-red-500 mt-0.5">✗</span>
+											<span>{con}</span>
+										</li>
+									))}
+								</ul>
+							</div>
+						)}
+					</div>
+				)}
+
+				<!-- Content -->
+				<div class="prose prose-stone prose-lg max-w-none prose-headings:font-bold prose-a:text-rose-500 prose-a:no-underline hover:prose-a:underline">
+					<Content />
+				</div>
+
+				<!-- Affiliate link -->
+				{post.data.affiliateLink && (
+					<div class="mt-10 text-center">
+						<a
+							href={post.data.affiliateLink}
+							target="_blank"
+							rel="noopener noreferrer nofollow"
+							class="inline-block bg-rose-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-rose-600 transition-colors no-underline"
+						>
+							Check Price →
+						</a>
+					</div>
+				)}
+
+				<!-- Disclosure -->
+				<div class="mt-12 p-5 bg-stone-50 rounded-lg border border-stone-200">
+					<p class="text-xs text-stone-500">
+						<strong class="text-stone-600">Affiliate Disclosure:</strong> BeautyDupe may earn a commission on purchases made through links in this article. This does not influence our ratings or editorial content. We only recommend products we genuinely believe in.
+					</p>
+				</div>
+			</article>
+		</main>
+
+		<Footer />
+	</body>
+</html>
