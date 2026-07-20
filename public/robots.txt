@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://beautydupe.com/sitemap-index.xml
+Sitemap: https://beautydupe.shop/sitemap-index.xml

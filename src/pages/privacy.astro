@@ -1,0 +1,43 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Privacy Policy — ${SITE_TITLE}`} description="Privacy Policy for BeautyDupe." />
+	</head>
+	<body class="bg-white font-sans text-stone-900 antialiased">
+		<Header />
+
+		<main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+			<h1 class="text-3xl sm:text-4xl font-bold text-stone-900 mb-8">Privacy Policy</h1>
+
+			<div class="prose prose-stone max-w-none">
+				<p>Last updated: July 20, 2026</p>
+
+				<p>At BeautyDupe, accessible from beautydupe.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by BeautyDupe and how we use it.</p>
+
+				<h2 class="text-xl font-bold text-stone-900 mt-8 mb-4">1. Information We Collect</h2>
+				<p>We may collect personal information such as your name, email address, and other contact details when you voluntarily subscribe to our newsletter, leave a comment, or contact us directly.</p>
+
+				<h2 class="text-xl font-bold text-stone-900 mt-8 mb-4">2. Affiliate Disclosure</h2>
+				<p>BeautyDupe is a participant in various affiliate marketing programs. We embed tracking links into the website. If you click on a link to an affiliate partnership, a cookie will be placed on your browser to track any sales for purposes of commissions. This is at no extra cost to you.</p>
+
+				<h2 class="text-xl font-bold text-stone-900 mt-8 mb-4">3. Log Files</h2>
+				<p>BeautyDupe follows a standard procedure of using log files. These files log visitors when they visit websites. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks.</p>
+
+				<h2 class="text-xl font-bold text-stone-900 mt-8 mb-4">4. Cookies and Web Beacons</h2>
+				<p>Like any other website, BeautyDupe uses "cookies". These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
+
+				<h2 class="text-xl font-bold text-stone-900 mt-8 mb-4">5. Contact Us</h2>
+				<p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at <a href="mailto:privacy@beautydupe.com" class="text-rose-500 hover:text-rose-600">privacy@beautydupe.com</a>.</p>
+			</div>
+		</main>
+
+		<Footer />
+	</body>
+</html>

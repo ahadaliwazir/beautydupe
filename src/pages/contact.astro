@@ -1,0 +1,55 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Contact Us — ${SITE_TITLE}`} description="Get in touch with BeautyDupe for inquiries, reviews, and partnerships." />
+	</head>
+	<body class="bg-white font-sans text-stone-900 antialiased">
+		<Header />
+
+		<main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+			<h1 class="text-3xl sm:text-4xl font-bold text-stone-900 mb-8">Contact Us</h1>
+
+			<div class="prose prose-stone prose-lg max-w-none">
+				<p>
+					We'd love to hear from you! Whether you have a question about a product review, a tip on an amazing new dupe, or a business inquiry, feel free to reach out.
+				</p>
+
+				<div class="mt-10 p-8 bg-rose-50 rounded-xl border border-rose-100">
+					<h2 class="text-2xl font-bold text-stone-900 mb-4 mt-0">General Inquiries & Feedback</h2>
+					<p class="text-stone-700">
+						Found a great dupe we missed? Have a question about a review?
+					</p>
+					<p class="mt-2 text-lg">
+						<a href="mailto:hello@beautydupe.com" class="text-rose-600 font-semibold hover:text-rose-700 no-underline">
+							hello@beautydupe.com
+						</a>
+					</p>
+				</div>
+
+				<div class="mt-8 p-8 bg-stone-50 rounded-xl border border-stone-200">
+					<h2 class="text-2xl font-bold text-stone-900 mb-4 mt-0">Partnerships & PR</h2>
+					<p class="text-stone-700">
+						For brand partnerships, press inquiries, or submitting products for review consideration, please email our partnerships team.
+					</p>
+					<p class="mt-2 text-lg">
+						<a href="mailto:partnerships@beautydupe.com" class="text-stone-900 font-semibold hover:text-rose-600 transition-colors no-underline">
+							partnerships@beautydupe.com
+						</a>
+					</p>
+					<p class="text-sm text-stone-500 mt-4 italic">
+						Note: We do not accept paid reviews. All submitted products are subject to our standard, unbiased testing process.
+					</p>
+				</div>
+			</div>
+		</main>
+
+		<Footer />
+	</body>
+</html>

@@ -7,7 +7,7 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://beautydupe.com',
+  site: 'https://beautydupe.shop',
   integrations: [mdx(), sitemap()],
   vite: {
     plugins: [tailwindcss()],
