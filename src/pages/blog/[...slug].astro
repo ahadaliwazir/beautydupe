@@ -202,10 +202,15 @@ const articleSchema = !post.data.rating ? {
 					)}
 				</header>
 
-				<!-- Hero image placeholder -->
-				<div class="w-full h-64 sm:h-80 bg-rose-50 rounded-xl mb-10 flex items-center justify-center">
-					<span class="text-rose-200">Featured Image</span>
-				</div>
+				{post.data.heroImage ? (
+					<div class="w-full h-64 sm:h-80 rounded-xl mb-10 overflow-hidden">
+						<img src={post.data.heroImage} alt={post.data.title} class="w-full h-full object-contain" />
+					</div>
+				) : (
+					<div class="w-full h-64 sm:h-80 bg-rose-50 rounded-xl mb-10 flex items-center justify-center">
+						<span class="text-rose-200">Featured Image</span>
+					</div>
+				)}
 
 				<!-- Pros / Cons -->
 				{(post.data.pros || post.data.cons) && (
