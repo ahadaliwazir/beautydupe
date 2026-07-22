@@ -29,9 +29,22 @@ For men, especially those who spend a lot of time outdoors or sweating under pro
 
 **[Get Bhuvan's Cetaphil Cleanser Here](https://amzn.to/4yyJJq7)**
 
-## Step 2: The Treatment (Minimalist)
+After stripping away the dirt and oil of a long shooting day with Cetaphil, Bhuvan turns to **Minimalist** for his active treatments. Specifically, their **10% Advanced Vitamin C Serum**.
 
-*(Note: Waiting for your Minimalist product link to complete this section!)*
+While many celebrities tout expensive $150 vitamin C serums, Minimalist has taken the internet by storm because of its transparent, science-backed formulations that cost a fraction of the price. 
+
+![Minimalist Vitamin C Serum](/minimalist-serum-model.jpg)
+
+### Why it works for Bhuvan:
+* **Brightens and Illuminates:** Vitamin C is essential for treating uneven skin tone, dullness, and UV damage (which is crucial when you are outside filming for hours).
+* **Stable Formulation:** Minimalist uses a highly stable form of Vitamin C mixed with Acetyl Glucosamine and Centella, which means it won't irritate the skin or oxidize as quickly as older serums.
+* **The Value:** For just over $12, you get a premium, fragrance-free serum that competes directly with high-end Sephora brands. 
+
+**[Get Bhuvan's Minimalist Vitamin C Serum Here](https://amzn.to/44MAzsC)**
+
+## The Verdict
+
+You don't need a massive budget to have great skin. Bhuvan Bam is proof that sticking to a simple two-step routine — a gentle pharmacy cleanser like Cetaphil, followed by a targeted, active serum like Minimalist — is the real secret to clear, camera-ready skin.
 
 ---
 
