@@ -2,7 +2,7 @@
 title: "Bhuvan Bam’s Skincare Routine: Why He Swears By Cetaphil & Minimalist"
 description: "Wondering how BB Ki Vines star Bhuvan Bam keeps his skin looking flawless on camera? We break down his incredibly simple, affordable two-step skincare routine."
 pubDate: 2026-07-22
-category: "men's grooming"
+category: "mens-grooming"
 heroImage: "/cetaphil-bottle.jpg"
 affiliateLink: "https://amzn.to/4yyJJq7"
 price: "$23.76 (2-Pack)"
