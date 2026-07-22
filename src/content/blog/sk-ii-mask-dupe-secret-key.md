@@ -5,7 +5,7 @@ pubDate: 2026-07-22
 category: "dupes"
 dupeFor: "SK-II Facial Treatment Mask ($100)"
 price: "$15.00"
-heroImage: "/og-default.png"
+heroImage: "/71BukQHsv7L._SL1500_.jpg"
 affiliateLink: "https://amzn.to/4yzQacK"
 ---
 
