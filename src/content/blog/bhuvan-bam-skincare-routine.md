@@ -4,7 +4,6 @@ description: "Wondering how BB Ki Vines star Bhuvan Bam keeps his skin looking f
 pubDate: 2026-07-22
 category: "mens-grooming"
 heroImage: "/cetaphil-bottle.jpg"
-affiliateLink: "https://amzn.to/4yyJJq7"
 price: "$23.76 (2-Pack)"
 ---
 
@@ -27,7 +26,9 @@ For men, especially those who spend a lot of time outdoors or sweating under pro
 * **Oil Control without Stripping:** It removes excess oil and dirt (perfect for combination to oily skin) but preserves the skin's natural moisture. 
 * **The Value:** On Amazon, you can get a massive 16 oz 2-pack for under $25, making it one of the most cost-effective cleansers on the market.
 
-**[Get Bhuvan's Cetaphil Cleanser Here](https://amzn.to/4yyJJq7)**
+<div class="not-prose my-6 text-center sm:text-left">
+  <a href="https://amzn.to/4yyJJq7" target="_blank" rel="noopener noreferrer nofollow sponsored" class="inline-block bg-rose-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-rose-600 transition-colors no-underline">Get Cetaphil on Amazon →</a>
+</div>
 
 After stripping away the dirt and oil of a long shooting day with Cetaphil, Bhuvan turns to **Minimalist** for his active treatments. Specifically, their **10% Advanced Vitamin C Serum**.
 
@@ -40,7 +41,9 @@ While many celebrities tout expensive $150 vitamin C serums, Minimalist has take
 * **Stable Formulation:** Minimalist uses a highly stable form of Vitamin C mixed with Acetyl Glucosamine and Centella, which means it won't irritate the skin or oxidize as quickly as older serums.
 * **The Value:** For just over $12, you get a premium, fragrance-free serum that competes directly with high-end Sephora brands. 
 
-**[Get Bhuvan's Minimalist Vitamin C Serum Here](https://amzn.to/44MAzsC)**
+<div class="not-prose my-6 text-center sm:text-left">
+  <a href="https://amzn.to/44MAzsC" target="_blank" rel="noopener noreferrer nofollow sponsored" class="inline-block bg-rose-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-rose-600 transition-colors no-underline">Get Minimalist on Amazon →</a>
+</div>
 
 ## The Verdict
 
