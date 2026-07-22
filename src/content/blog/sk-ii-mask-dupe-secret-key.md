@@ -6,7 +6,7 @@ category: "dupes"
 dupeFor: "SK-II Facial Treatment Mask ($100)"
 price: "$15.00"
 heroImage: "/og-default.png"
-affiliateLink: "INSERT_YOUR_AMAZON_LINK_HERE"
+affiliateLink: "https://amzn.to/4yzQacK"
 ---
 
 ## The $100 Cult Classic: SK-II
@@ -40,6 +40,4 @@ For the price of a single SK-II mask, you can buy an entire 10-pack of the Secre
 
 If you have unlimited funds, the SK-II mask is a beautiful, luxurious product. But if you want the exact same fermented, glass-skin benefits for a fraction of the price, the **Secret Key Starting Treatment Essential Mask** is the best beauty dupe on the market right now. 
 
-[Check Price on Amazon for the Secret Key Mask](INSERT_YOUR_AMAZON_LINK_HERE)
-
-*(Note: Don't forget to grab the Secret Key Amazon link and product image to update this post!)*
+[Check Price on Amazon for the Secret Key Mask](https://amzn.to/4yzQacK)
