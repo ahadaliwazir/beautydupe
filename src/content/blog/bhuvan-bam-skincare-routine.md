@@ -59,4 +59,4 @@ The BB Ki Vines skincare approach focuses on simplicity and consistency, using t
 **Is this a good celebrity skincare routine for men?**
 Yes, it relies on affordable, science-backed products rather than overpriced luxury items, making it accessible and highly effective.
 
-*Do you use Cetaphil or Minimalist in your daily routine? Let us know in the comments below!*
+*Love skincare tips like this? Follow us on Instagram [@beautydupe.shop](https://instagram.com/beautydupe.shop) for daily dupes and routines!*
