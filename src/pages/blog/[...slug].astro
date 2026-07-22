@@ -39,7 +39,10 @@ function categoryColor(cat: string) {
 }
 
 const postUrl = `${SITE_URL}/blog/${post.id}`;
-const ogImageUrl = `${SITE_URL}/og-default.png`;
+const heroImg = post.data.heroImage;
+const ogImageUrl = heroImg
+	? (heroImg.startsWith('http') ? heroImg : `${SITE_URL}${heroImg.startsWith('/') ? heroImg : '/' + heroImg}`)
+	: `${SITE_URL}/og-default.png`;
 
 // Breadcrumb schema
 const breadcrumbSchema = {
@@ -136,7 +139,7 @@ const articleSchema = !post.data.rating ? {
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={`${post.data.title} — ${SITE_TITLE}`} description={post.data.description} type="article" />
+		<BaseHead title={`${post.data.title} — ${SITE_TITLE}`} description={post.data.description} image={ogImageUrl} type="article" />
 		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 		{reviewSchema && (
 			<script type="application/ld+json" set:html={JSON.stringify(reviewSchema)} />
@@ -204,7 +207,7 @@ const articleSchema = !post.data.rating ? {
 
 				{post.data.heroImage ? (
 					<div class="w-full h-64 sm:h-80 rounded-xl mb-10 overflow-hidden">
-						<img src={post.data.heroImage} alt={post.data.title} class="w-full h-full object-contain" />
+						<img src={post.data.heroImage} alt={post.data.title} loading="eager" fetchpriority="high" decoding="async" class="w-full h-full object-contain" />
 					</div>
 				) : (
 					<div class="w-full h-64 sm:h-80 bg-rose-50 rounded-xl mb-10 flex items-center justify-center">

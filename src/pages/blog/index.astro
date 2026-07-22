@@ -102,7 +102,7 @@ const collectionPageSchema = {
 					<a href={`/blog/${post.id}`} class="group no-underline">
 						<article class="bg-white rounded-xl border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow h-full">
 							<div class="h-44 bg-rose-50 flex items-center justify-center overflow-hidden">
-							{post.data.heroImage ? <img src={post.data.heroImage} alt={post.data.title} class="w-full h-full object-cover" /> : <span class="text-rose-200 text-sm">Image</span>}
+							{post.data.heroImage ? <img src={post.data.heroImage} alt={post.data.title} loading="lazy" decoding="async" class="w-full h-full object-cover" /> : <span class="text-rose-200 text-sm">Image</span>}
 						</div>
 							<div class="p-5">
 								<span class={`inline-block text-xs font-semibold px-2 py-1 rounded-full mb-3 ${categoryColor(post.data.category)}`}>
